@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <meta name="description" content="Formulario de compromiso para la preservación de la cuenca del río Santa María.">
+    <meta name="author" content="Tu Nombre">
+    <link rel="icon" href="img/icono.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Compromiso | Cuenca del Río Santa María</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+            <h1>Cuenca del Río Santa María</h1>
+            <p class="subtitulo">Preservación y cuidado de nuestra fuente de vida</p>
+        </div>
+        <nav class="navegacion" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="importancia.html">Importancia</a></li>
+                <li><a href="compromiso.html" class="activo">Compromiso</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenido">
+            <div class="contenedor">
+                <h2>Únete al compromiso</h2>
+                <p>
+                    Completa el siguiente formulario para registrar tu compromiso con la
+                    preservación de la cuenca del río Santa María. Tu participación es
+                    fundamental para garantizar el futuro de este recurso natural.
+                </p>
+
+                <form action="#" method="post" class="formulario" novalidate>
+                    <fieldset>
+                        <legend>Datos personales</legend>
+
+                        <div class="campo">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ej: María González" required
+                                minlength="3" maxlength="80" autocomplete="name">
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required
+                                autocomplete="email">
+                        </div>
+
+                        <div class="campo">
+                            <label for="edad">Edad:</label>
+                            <input type="number" id="edad" name="edad" min="12" max="120" required placeholder="Ej: 25">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Teléfono (opcional):</label>
+                            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8,15}"
+                                placeholder="Ej: 60001234" title="Ingrese entre 8 y 15 dígitos">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Información de ubicación</legend>
+
+                        <div class="campo">
+                            <label for="provincia">Provincia:</label>
+                            <select id="provincia" name="provincia" required>
+                                <option value="">Seleccione una provincia</option>
+                                <option value="veraguas">Veraguas</option>
+                                <option value="herrera">Herrera</option>
+                                <option value="los_santos">Los Santos</option>
+                                <option value="colon">Colón</option>
+                                <option value="otra">Otra</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="comunidad">Comunidad o barrio:</label>
+                            <input type="text" id="comunidad" name="comunidad" list="comunidades"
+                                placeholder="Escriba su comunidad" required>
+                            <datalist id="comunidades">
+                                <option value="Santa María">
+                                <option value="San Francisco">
+                                <option value="El Potrero">
+                                <option value="La Mesa">
+                                <option value="Los Valles">
+                            </datalist>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Tu compromiso</legend>
+
+                        <div class="campo">
+                            <label for="tipo_compromiso">Tipo de compromiso:</label>
+                            <select id="tipo_compromiso" name="tipo_compromiso" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="limpieza">Participar en jornadas de limpieza</option>
+                                <option value="educacion">Educar a otros sobre el cuidado del agua</option>
+                                <option value="ahorro">Ahorrar agua en mi hogar</option>
+                                <option value="denuncia">Denunciar actividades contaminantes</option>
+                                <option value="voluntariado">Ser voluntario ambiental</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="fecha">Fecha de compromiso:</label>
+                            <input type="date" id="fecha" name="fecha" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="comentario">Comentario o sugerencia:</label>
+                            <textarea id="comentario" name="comentario" rows="4" cols="40" maxlength="500"
+                                placeholder="Escriba aquí su comentario (máx. 500 caracteres)"></textarea>
+                        </div>
+
+                        <div class="campo checkbox">
+                            <input type="checkbox" id="acepto" name="acepto" required>
+                            <label for="acepto">
+                                Acepto el compromiso de cuidar y preservar la cuenca del río Santa María.
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton">Enviar compromiso</button>
+                        <button type="reset" class="boton secundario">Limpiar formulario</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy; 2026 Cuenca del Río Santa María. Todos los derechos reservados.</p>
+            <address>
+                Proyecto educativo sin fines de lucro.<br>
+                Contacto: <a href="mailto:info@cuencasantamaria.org">info@cuencasantamaria.org</a>
+            </address>
+        </div>
+    </footer>
+</body>
+
+</html>
